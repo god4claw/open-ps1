@@ -92,11 +92,4 @@ Add-CommandOutput "Task 9 - OS baseline" {
         Select-Object Caption, Version, BuildNumber, OSArchitecture, LastBootUpTime
 }
 
-Write-Section "Student notes"
-Add-Content -Path $OutputPath -Value "1. Is this a Dell OptiPlex or another physical host?"
-Add-Content -Path $OutputPath -Value "2. How much RAM can we safely reserve for VMs?"
-Add-Content -Path $OutputPath -Value "3. Is there enough free disk space for VM disks and snapshots?"
-Add-Content -Path $OutputPath -Value "4. Is the GPU a real vendor driver or Microsoft Basic Display?"
-Add-Content -Path $OutputPath -Value "5. Which physical NIC is the primary uplink?"
-
 Write-Host "Report written to $OutputPath"
